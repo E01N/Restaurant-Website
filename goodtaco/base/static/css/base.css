@@ -1,6 +1,23 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* root variables */
 :root {
     --base-color: #FACDDE;
     --dark-color: #E24B33;
+    --color-white: #fff;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark: #363949;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
 * {
@@ -12,13 +29,39 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    transition: all 300ms ease;
 }
 
 body {
+    width: 100%;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
     background: var(--base-color);
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--color-dark);
 }
 
+
+.navbar {
+
+}
+
+
 .logo {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+}
+
+.links {
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+a {
+    color: var(--dark-color);
 }
