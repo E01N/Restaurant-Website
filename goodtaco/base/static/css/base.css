@@ -1,0 +1,24 @@
+:root {
+    --base-color: #FACDDE;
+    --dark-color: #E24B33;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--base-color);
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
