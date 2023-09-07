@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
     <title>GoodTaco</title>
 </head>
@@ -12,15 +13,25 @@
 
     <header>
         <div class="navbar">
-            <!--<a href="#"><img src="static/images/GoodTaco.gif" alt="GoodTaco logo with thumbs up" width="150px"></a>!-->
+            <a href="#" class="logo"><img src="static/images/GoodTaco.gif" alt="GoodTaco logo with thumbs up" width="150px"></a>
             <ul class="links">
-                <a href="#"><img src="static/images/GoodTaco.gif" alt="GoodTaco logo with thumbs up" width="150px"></a>
                 <li><a href="#">home</a></li>
                 <li><a href="#">about</a></li>
                 <li><a href="#">menu</a></li>
                 <li><a href="#">contact</a></li>
             </ul>
-            <a href="#">book a table</a>
+            <a href="#" class="action-btn">book a table</a>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars fa-lg"></i>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">book a table</a></li>
         </div>
     </header>
     <main>
