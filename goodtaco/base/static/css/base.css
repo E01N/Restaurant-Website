@@ -129,14 +129,32 @@ li a:hover {
 
 /* dropdown menu*/
 .dropdown {
-    
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 150px;
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+.dropdown li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
 }
 
 /* navbar responsive design*/
 @media(max-width: 992px) {
-    .navbar .links, .logo, 
+    .navbar .links, 
     .action-btn {
         display: none;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        margin-right: auto;
+        margin-left: -50px;
     }
 
     .navbar .toggle-btn {
