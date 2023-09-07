@@ -7,7 +7,7 @@ Pillow==8.3.1                # Image handling library
 python-decouple==3.4         # For managing configuration
 django-widget-tweaks==1.4.8  # Template tag library for form customization
 django-ckeditor==6.0.0       # Rich text editor for content
-django-fontawesome==5.1.0     # Font Awesome integration for Django
+django-fontawesome==1.0     # Font Awesome integration for Django
 django-filter==2.4.0          # Filtering for querysets
-django-bootstrap-datepicker-plus==3.3.0  # Date picker widget
-django-crispy-bootstrap5==0.6.1          # Bootstrap 5 support for django-crispy-forms
+django-bootstrap-datepicker-plus==5.0.4  # Date picker widget
+django-crispy-bootstrap==0.1.1.1          # Bootstrap 5 support for django-crispy-forms
