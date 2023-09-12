@@ -167,12 +167,12 @@ li a:hover {
 }
 
 .about-container {
-    max-width: 800px; /* Adjust as needed */
+    max-width: 800px;
     margin: 0 auto;
-    background-color: var(--base-color); /* Background color for the box */
+    background-color: var(--base-color);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for the box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .about-content h2 {
