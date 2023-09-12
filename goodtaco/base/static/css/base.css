@@ -47,7 +47,7 @@ body {
 
 header{
     position: relative;
-    z-index: 9999;
+    z-index: 99999;
 }
 
 
@@ -296,9 +296,26 @@ li a:hover {
 
 
 /* menu section */
-.menu {
-    height: 100vh;
+.menu-head {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark-color);
+    font-family: 'Titan One', cursive;
+    font-size: 120px;
+    font-weight: 150;
 }
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+td {
+    border: 1px solid black;
+}
+
+
+
 
 /* navbar responsive design*/
 @media(max-width: 992px) {
