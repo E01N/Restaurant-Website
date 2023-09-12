@@ -61,10 +61,7 @@ header{
     align-items: center;
     justify-content: space-around;
     background-color: var(--base-color);
-}
-
-
-.logo {
+    transition: 0.3s;
 }
 
 .links {
@@ -156,6 +153,11 @@ li a:hover {
     justify-content: center;
     align-items: center;
     padding: 5px;
+}
+
+/* Home Section*/
+.home {
+    background-image: url(/static/images/home-bg.jpg);
 }
 
 /* About Us Section */
