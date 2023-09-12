@@ -1,5 +1,5 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@300;400;500;600;700;800&display=swap&family=Titan+One&display=swap');
 
 /* root variables */
 :root {
@@ -47,6 +47,7 @@ body {
 
 header{
     position: relative;
+    z-index: 9999;
 }
 
 
@@ -55,13 +56,19 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 90px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: var(--base-color);
     transition: 0.3s;
+}
+
+.head-logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--dark-color);
 }
 
 .links {
@@ -83,6 +90,7 @@ a {
 }
 
 li a {
+    font-weight: 700;
     text-transform: uppercase;
     padding: 1px 3px 1px 3px;
 }
@@ -97,6 +105,7 @@ li a:hover {
 .action-btn {
     text-transform: capitalize;
     font-size: large;
+    font-weight: 700;
     background-color: var(--dark-color);
     color: var(--base-color);
     border: 2px solid;
@@ -157,8 +166,75 @@ li a:hover {
 
 /* Home Section*/
 .home {
-    background-image: url(/static/images/home-bg.jpg);
+    background-image: url(/static/images/home.jpg);
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Text color */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
 }
+
+.home-main,
+.home-second,
+.home-third {
+    text-align: center;
+    transform: rotate(-10deg);
+    margin-top: 10px;
+    padding: 5px 15px 5px 15px;
+}
+
+.home-main {
+    text-transform: uppercase;
+    color: var(--background-color);
+    background-color: var(--dark-color);
+    font-family: 'Titan One', cursive;
+    font-size: 120px;
+    font-weight: 150;
+    border-radius: 20px;
+}
+
+.home-second {
+    color: var(--dark-color);
+    background-color: var(--base-color);
+    font-family: 'Titan One', cursive;
+    font-size: 35px;
+    font-weight: 150;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+
+.home-third {
+    color: var(--dark-color);
+    background-color: var(--background-color);
+    font-family: 'Titan One', cursive;
+    font-size: 20px;
+    font-weight: 80;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 65px;
+}
+
+.home-book {
+    text-transform: uppercase;
+    color: var(--dark-color);
+    background-color: var(--background-color);
+    border-radius: 5px;
+    font-family: 'Titan One', cursive;
+    font-size: 25px;
+    font-weight: 550;
+    padding: 5px 15px 5px 15px;
+    margin-top: 250px;
+}
+
+
+
 
 /* About Us Section */
 .about-us {
@@ -168,12 +244,18 @@ li a:hover {
 
 .about-container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 25px;
     background-color: var(--base-color);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+/*.about-content, .about-story, .about-tacos, .about-visit {
+    max-width: 700px;
+    align-items: center;
+    justify-content: center;
+}*/
 
 .about-content h2 {
     color: var(--dark-color);
