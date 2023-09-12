@@ -341,6 +341,35 @@ td {
     width: 400px;
 }
 
+/* contact section */
+.contact {
+    background-color: var(--base-color);
+    padding-top: 25px;
+}
+.contact-head {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark-color);
+    font-family: 'Titan One', cursive;
+    font-size: 80px;
+    font-weight: 150;
+}
+
+.contact-info {
+    margin-bottom: 100px;
+}
+
+.contact-info li {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark-color);
+    font-size: 20px;
+    font-weight: 150;
+}
+
+.contact-info ul {
+    padding-bottom: 25px;
+}
 
 
 
@@ -391,6 +420,106 @@ td {
         font-size: 12px;
         font-weight: 40;
     }
+
+    .about-container {
+        height: 80%;
+    }
+
+    .about-img {
+        display: none;
+    }
+        
+    .about-text {
+        background-color: var(--color-white);
+        border-radius: 10px;
+        margin: 15px;
+        height: 40vh;
+        width: 90%;
+        z-index: 9999;
+    }
+
+    .about-text h1 {
+        transform: rotate(-10deg);
+        font-family: 'Titan One', cursive;
+        color: var(--dark-color);
+        font-size: 30px;
+        font-weight: 150;
+        padding-top: 50px;
+    }
+
+    .about-text p {
+        color: var(--dark-color);
+        height: auto;
+        width: auto;
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        padding: 25px 15px 0 15px;
+    }
+
+    .contact-btn {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .menu-head {
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--dark-color);
+        font-family: 'Titan One', cursive;
+        font-size: 100px;
+        font-weight: 150;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        height: auto;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .table-head {
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--dark-color);
+        font-family: 'Titan One', cursive;
+        font-size: 30px;
+        font-weight: 100;
+    }
+    
+    table {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-collapse: collapse;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    
+    td {
+        border: 2px solid var(--dark-color);
+        color: var(--dark-color);
+        font-size: 15px;
+        font-weight: 600;
+        width: 300px;
+    }
+
+    .contact-head {
+        font-size: 40px;
+    }
+
+    .contact-info li {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+}
+
+/*Media Query for medium screen*/
+@media (max-width: 850px) {
 
     .about-container {
         height: 80%;
