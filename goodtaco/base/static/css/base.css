@@ -238,57 +238,67 @@ li a:hover {
 
 /* About Us Section */
 .about-us {
-    padding: 120px 0 40px;
     text-align: center;
 }
 
 .about-container {
-    max-width: 800px;
-    margin: 25px;
-    background-color: var(--base-color);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/*.about-content, .about-story, .about-tacos, .about-visit {
-    max-width: 700px;
-    align-items: center;
+    display: flex;
     justify-content: center;
-}*/
+    background-color: var(--base-color);
+    height: 100vh;
+}
 
-.about-content h2 {
+.about-img {
+    margin-top: 10vh;
+    width: 600px;
+    height: 80vh;
+    border: 10px solid var(--dark-color);
+}
+
+.about-text {
+    background-color: var(--color-white);
+    margin-top: 15vh;
+    margin-left: -150px;
+    height: 50vh;
+    width: 30vmax;
+    z-index: 9999;
+}
+
+.about-text h1 {
+    transform: rotate(-10deg);
+    font-family: 'Titan One', cursive;
     color: var(--dark-color);
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 150;
+    padding-top: 50px;
 }
 
-.about-content p {
-    font-size: 16px;
-    line-height: 1.5;
+.about-text p {
     color: var(--dark-color);
-}
-
-.about-story, .about-tacos, .about-visit {
-    margin-top: 40px;
-}
-
-.about-story h3,
-.about-tacos h3,
-.about-visit h3 {
+    width: 100%;
     font-size: 20px;
-    margin-bottom: 10px;
-    color: var(--dark-color);
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 50px 20px 30px 20px;
 }
 
-.about-story p,
-.about-tacos p,
-.about-visit p {
-    font-size: 16px;
-    line-height: 1.5;
+.contact-btn {
+    text-transform: uppercase;
     color: var(--dark-color);
+    background-color: var(--background-color);
+    border: 2px solid var(--dark-color);
+    border-radius: 5px;
+    font-family: 'Titan One', cursive;
+    font-size: 25px;
+    font-weight: 550;
+    padding: 5px 15px 5px 15px;
 }
 
+
+/* menu section */
+.menu {
+    height: 100vh;
+}
 
 /* navbar responsive design*/
 @media(max-width: 992px) {
@@ -323,23 +333,59 @@ li a:hover {
 
 /* Media Query for Small Screens */
 @media (max-width: 768px) {
-    .about-content h2 {
+    .home-main {
+        font-size: 60px;
+        font-weight: 150;
+    }
+
+    .home-second {
+        font-size: 17px;
+        font-weight: 50;
+    }
+
+    .home-third {
+        font-size: 12px;
+        font-weight: 40;
+    }
+
+    .about-container {
+        height: 80%;
+    }
+
+    .about-img {
+        display: none;
+    }
+        
+    .about-text {
+        background-color: var(--color-white);
+        border-radius: 10px;
+        margin: 15px;
+        height: 40vh;
+        width: 90%;
+        z-index: 9999;
+    }
+
+    .about-text h1 {
+        transform: rotate(-10deg);
+        font-family: 'Titan One', cursive;
+        color: var(--dark-color);
+        font-size: 30px;
+        font-weight: 150;
+        padding-top: 50px;
+    }
+
+    .about-text p {
+        color: var(--dark-color);
+        height: auto;
+        width: auto;
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        padding: 25px 15px 0 15px;
+    }
+
+    .contact-btn {
         font-size: 20px;
-    }
-
-    .about-content p {
-        font-size: 14px;
-    }
-
-    .about-story h3,
-    .about-tacos h3,
-    .about-visit h3 {
-        font-size: 18px;
-    }
-
-    .about-story p,
-    .about-tacos p,
-    .about-visit p {
-        font-size: 14px;
+        font-weight: 500;
     }
 }
