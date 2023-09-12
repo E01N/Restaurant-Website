@@ -1,6 +1,11 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@300;400;500;600;700;800&display=swap&family=Titan+One&display=swap');
 
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* root variables */
 :root {
     --base-color: #FACDDE;
