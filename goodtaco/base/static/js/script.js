@@ -20,7 +20,7 @@ window.addEventListener('scroll', () => {
     const scrollDifference = Math.abs(currentScrollPos - prevScrollPos);
 
     if (scrollDifference >= 50) {
-        // The user has scrolled at least 100px
+        // The user has scrolled at least 50px
         hasScrolled = true;
     }
 
