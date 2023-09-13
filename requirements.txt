@@ -1,13 +1,18 @@
+annotated-types==0.5.0
 asgiref==3.7.2
 Django==4.2.5
+django-bootstrap-datepicker-plus==5.0.4
+django-ckeditor==6.0.0
+django-crispy-bootstrap==0.1.1.1
+django-crispy-forms==1.14.0
+django-filter==2.4.0
+django-fontawesome==1.0
+django-js-asset==2.1.0
+django-widget-tweaks==1.4.8
+heroku==0.1.4
+Pillow==8.3.1
+pydantic==2.3.0
+pydantic_core==2.6.3
+python-dateutil==1.5
+python-decouple==3.4
 sqlparse==0.4.4
-
-django-crispy-forms==1.14.0  # For easier form rendering
-Pillow==8.3.1                # Image handling library
-python-decouple==3.4         # For managing configuration
-django-widget-tweaks==1.4.8  # Template tag library for form customization
-django-ckeditor==6.0.0       # Rich text editor for content
-django-fontawesome==1.0     # Font Awesome integration for Django
-django-filter==2.4.0          # Filtering for querysets
-django-bootstrap-datepicker-plus==5.0.4  # Date picker widget
-django-crispy-bootstrap==0.1.1.1          # Bootstrap 5 support for django-crispy-forms
