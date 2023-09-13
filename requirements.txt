@@ -16,3 +16,4 @@ pydantic_core==2.6.3
 python-dateutil==1.5
 python-decouple==3.4
 sqlparse==0.4.4
+whitenoise==6.5.0
