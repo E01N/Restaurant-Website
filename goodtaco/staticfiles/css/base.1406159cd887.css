@@ -1,0 +1,657 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@300;400;500;600;700;800&display=swap&family=Titan+One&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* root variables */
+:root {
+    --base-color: #FACDDE;
+    --dark-color: #E24B33;
+    --color-white: #fff;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark: #363949;
+    --background-color: #FDECF3;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    transition: all 100ms ease;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    background: var(--background-color);
+    user-select: none;
+    overflow-x: hidden;
+}
+
+/* header */
+
+header{
+    position: relative;
+    z-index: 99999;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--base-color);
+    transition: 0.3s;
+}
+
+.head-logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+.links {
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+a {
+    color: var(--dark-color);
+}
+
+.navbar .links {
+    display: flex;
+    gap: 3rem;
+    font-size: large;
+}
+
+li a {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1px 3px 1px 3px;
+}
+
+li a:hover {
+    background-color: var(--dark-color);
+    color: var(--base-color);
+    border-radius: 5px;
+    padding: 1px 3px 1px 3px;
+}
+
+.action-btn {
+    text-transform: capitalize;
+    font-size: large;
+    font-weight: 700;
+    background-color: var(--dark-color);
+    color: var(--base-color);
+    border: 2px solid;
+    border-color: var(--dark-color);
+    border-radius: 8px;
+    padding: 1px 3px 1px 3px;
+    transition: scale 0.2 ease;
+}
+
+.action-btn:hover {
+    background-color: var(--base-color);
+    color: var(--dark-color);
+    scale: 1.05;
+}
+
+.action-btn:active {
+    scale: 0.95;
+}
+
+.toggle-btn {
+    font-size: large;
+    color: var(--dark-color);
+    cursor: pointer;
+    display: none;
+}
+
+.toggle-btn:active {
+    scale: 0.95;
+    transition: 0.3s ease-in-out;
+}
+
+/* dropdown menu */
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 2.5rem;
+    top: 4rem;
+    width: 150px;
+    height: 600px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.dropdown.open {
+    height: auto;
+}
+
+.dropdown ul {
+    list-style: none;
+}
+
+.dropdown li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+}
+
+/* Home Section*/
+.home {
+    background-image: url("/static/images/home.d7a7142ce16d.jpg");
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Text color */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.home-main,
+.home-second,
+.home-third {
+    text-align: center;
+    transform: rotate(-10deg);
+    margin-top: 10px;
+    padding: 5px 15px 5px 15px;
+}
+
+.home-main {
+    text-transform: uppercase;
+    color: var(--background-color);
+    background-color: var(--dark-color);
+    font-family: 'Titan One', cursive;
+    font-size: 120px;
+    font-weight: 150;
+    border-radius: 20px;
+}
+
+.home-second {
+    color: var(--dark-color);
+    background-color: var(--base-color);
+    font-family: 'Titan One', cursive;
+    font-size: 35px;
+    font-weight: 150;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+
+.home-third {
+    color: var(--dark-color);
+    background-color: var(--background-color);
+    font-family: 'Titan One', cursive;
+    font-size: 20px;
+    font-weight: 80;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 65px;
+}
+
+.home-book {
+    text-transform: uppercase;
+    color: var(--dark-color);
+    background-color: var(--background-color);
+    border-radius: 5px;
+    font-family: 'Titan One', cursive;
+    font-size: 25px;
+    font-weight: 550;
+    padding: 5px 15px 5px 15px;
+    margin-top: 250px;
+}
+
+
+
+
+/* About Us Section */
+.about-us {
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    background-color: var(--base-color);
+    height: 100vh;
+}
+
+.about-img {
+    margin-top: 10vh;
+    width: 600px;
+    height: 80vh;
+    border: 10px solid var(--dark-color);
+}
+
+.about-text {
+    background-color: var(--color-white);
+    margin-top: 15vh;
+    margin-left: -150px;
+    height: 50vh;
+    width: 30vmax;
+    z-index: 9999;
+}
+
+.about-text h1 {
+    transform: rotate(-10deg);
+    font-family: 'Titan One', cursive;
+    color: var(--dark-color);
+    font-size: 50px;
+    font-weight: 150;
+    padding-top: 50px;
+}
+
+.about-text p {
+    color: var(--dark-color);
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 50px 20px 30px 20px;
+}
+
+.contact-btn {
+    text-transform: uppercase;
+    color: var(--dark-color);
+    background-color: var(--background-color);
+    border: 2px solid var(--dark-color);
+    border-radius: 5px;
+    font-family: 'Titan One', cursive;
+    font-size: 25px;
+    font-weight: 550;
+    padding: 5px 15px 5px 15px;
+}
+
+
+/* menu section */
+.menu-head {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark-color);
+    font-family: 'Titan One', cursive;
+    font-size: 120px;
+    font-weight: 150;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table-head {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark-color);
+    font-family: 'Titan One', cursive;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+td {
+    border: 2px solid var(--dark-color);
+    color: var(--dark-color);
+    font-size: 20px;
+    font-weight: 700;
+    width: 400px;
+}
+
+/* contact section */
+.contact {
+    background-color: var(--base-color);
+    padding-top: 25px;
+}
+.contact-head {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark-color);
+    font-family: 'Titan One', cursive;
+    font-size: 80px;
+    font-weight: 150;
+}
+
+.contact-info {
+    margin-bottom: 100px;
+}
+
+.contact-info li {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark-color);
+    font-size: 20px;
+    font-weight: 150;
+}
+
+.contact-info ul {
+    padding-bottom: 25px;
+}
+
+
+/* reservation section */
+
+.res-head{
+    margin-top: 12%;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark-color);
+    font-family: 'Titan One', cursive;
+    font-size: 60px;
+    font-weight: 150;
+}
+
+label {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 10px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+button[type="submit"] {
+    background-color: var(--dark-color);
+    font-family: 'Titan One', cursive;
+    font-size: 35px;
+    color: var(--background-color);
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* navbar responsive design*/
+@media(max-width: 992px) {
+    .navbar .links, 
+    .action-btn {
+        display: none;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        margin-right: auto;
+        margin-left: -50px;
+        padding: 25px;
+    }
+
+    .navbar .toggle-btn {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: auto;
+        padding: 15px;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+
+    .dropdown {
+        display: block;
+    }
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .home-main {
+        font-size: 60px;
+        font-weight: 150;
+    }
+
+    .home-second {
+        font-size: 17px;
+        font-weight: 50;
+    }
+
+    .home-third {
+        font-size: 12px;
+        font-weight: 40;
+    }
+
+    .about-container {
+        height: 80%;
+    }
+
+    .about-img {
+        display: none;
+    }
+        
+    .about-text {
+        background-color: var(--color-white);
+        border-radius: 10px;
+        margin: 15px;
+        height: 40vh;
+        width: 90%;
+        z-index: 9999;
+    }
+
+    .about-text h1 {
+        transform: rotate(-10deg);
+        font-family: 'Titan One', cursive;
+        color: var(--dark-color);
+        font-size: 30px;
+        font-weight: 150;
+        padding-top: 50px;
+    }
+
+    .about-text p {
+        color: var(--dark-color);
+        height: auto;
+        width: auto;
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        padding: 25px 15px 0 15px;
+    }
+
+    .contact-btn {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .menu-head {
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--dark-color);
+        font-family: 'Titan One', cursive;
+        font-size: 100px;
+        font-weight: 150;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        height: auto;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .table-head {
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--dark-color);
+        font-family: 'Titan One', cursive;
+        font-size: 30px;
+        font-weight: 100;
+    }
+    
+    table {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-collapse: collapse;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    
+    td {
+        border: 2px solid var(--dark-color);
+        color: var(--dark-color);
+        font-size: 15px;
+        font-weight: 600;
+        width: 300px;
+    }
+
+    .contact-head {
+        font-size: 40px;
+    }
+
+    .contact-info li {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .res-head{
+        margin-top: 30%;
+        font-size: 25px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        width: 80%;
+        display: flex;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    button[type="submit"]{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+}
+
+/*Media Query for medium screen*/
+@media (max-width: 850px) {
+
+    .about-container {
+        height: 80%;
+    }
+
+    .about-img {
+        display: none;
+    }
+        
+    .about-text {
+        background-color: var(--color-white);
+        border-radius: 10px;
+        margin: 15px;
+        height: 40vh;
+        width: 90%;
+        z-index: 9999;
+    }
+
+    .about-text h1 {
+        transform: rotate(-10deg);
+        font-family: 'Titan One', cursive;
+        color: var(--dark-color);
+        font-size: 30px;
+        font-weight: 150;
+        padding-top: 50px;
+    }
+
+    .about-text p {
+        color: var(--dark-color);
+        height: auto;
+        width: auto;
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        padding: 25px 15px 0 15px;
+    }
+
+    .contact-btn {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    body {
+        height: 80vh;
+    }
+
+    .res-head {
+        margin-top: 35%;
+    }
+
+    footer {
+        position: relative;
+        display: block;
+    }
+}
