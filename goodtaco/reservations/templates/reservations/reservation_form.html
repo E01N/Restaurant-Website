@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="{% static '/css/base.css' %}">
+    <title>GoodTaco</title>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="#" class="logo"><img src="/static/images/GoodTaco.gif" alt="GoodTaco logo with thumbs up" width="150px"></a>
+            <ul class="links">
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#menu">menu</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+            <a href="#" class="action-btn">book a table</a>
+            <div class="toggle-btn">
+                <i class="fas fa-bars fa-lg"></i>
+                <div class="dropdown">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#menu">menu</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <li><a href="#">book a table</a></li>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="res-head">Make a Reservation</h1>
+        <form class="res-form" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="{{ form.name.id }}">Name:</label>
+                {{ form.name }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.email.id }}">Email:</label>
+                {{ form.email }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.phone.id }}">Phone:</label>
+                {{ form.phone }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.date.id }}">Date:</label>
+                {{ form.date }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.time.id }}">Time:</label>
+                {{ form.time }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.guests.id }}">Guests:</label>
+                {{ form.guests }}
+            </div>
+        
+            <button type="submit">Submit Reservation</button>
+        </form>
+    </main>
+
+    <footer>
+        <!-- contact section -->
+        <section class="contact" id="contact">
+            <h1 class="contact-head">contact us</h1>
+            <div class="contact-info">
+                <ul>
+                    <li><strong>Address:</strong> 123 Main Street, City, State ZIP</li>
+                    <li><strong>Email:</strong> contact@example.com</li>
+                    <li><strong>Phone:</strong> +1 (123) 456-7890</li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

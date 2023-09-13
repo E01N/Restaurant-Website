@@ -28,7 +28,7 @@
                     <li><a href="#about">about</a></li>
                     <li><a href="#menu">menu</a></li>
                     <li><a href="#contact">contact</a></li>
-                    <li><a href="#">book a table</a></li>
+                    <li><a href="{% url 'make_reservation' %}">book a table</a></li>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
             <span class="home-main">GoodTaco</span>
             <span class="home-second">Tacos  || Cocktails || Events || Music</span>
             <span class="home-third">Open 12:00pm - Late Seven Days a Week</span>
-            <a href="#" class="home-book">Book Now</a>
+            <a href="{% url 'make_reservation' %}" class="home-book">Book Now</a>
         </section>
 
         <!--about us section-->

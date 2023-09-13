@@ -377,6 +377,61 @@ td {
 }
 
 
+/* reservation section */
+
+.res-head{
+    margin-top: 12%;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark-color);
+    font-family: 'Titan One', cursive;
+    font-size: 60px;
+    font-weight: 150;
+}
+
+label {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 10px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+button[type="submit"] {
+    background-color: var(--dark-color);
+    font-family: 'Titan One', cursive;
+    font-size: 35px;
+    color: var(--background-color);
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 /* navbar responsive design*/
 @media(max-width: 992px) {
@@ -520,7 +575,27 @@ td {
         font-size: 15px;
         font-weight: 500;
     }
-    
+
+    .res-head{
+        margin-top: 30%;
+        font-size: 25px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        width: 80%;
+        display: flex;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    button[type="submit"]{
+        font-size: 20px;
+        margin-top: 50px;
+    }
 }
 
 /*Media Query for medium screen*/
@@ -565,5 +640,18 @@ td {
     .contact-btn {
         font-size: 20px;
         font-weight: 500;
+    }
+
+    body {
+        height: 80vh;
+    }
+
+    .res-head {
+        margin-top: 35%;
+    }
+
+    footer {
+        position: relative;
+        display: block;
     }
 }
