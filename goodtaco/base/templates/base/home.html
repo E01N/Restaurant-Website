@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'static/css/base.css' %}">
     <title>GoodTaco</title>
 </head>
 <body>
 
     <header>
         <div class="navbar">
-            <a href="#" class="logo"><img src="static/images/GoodTaco.gif" alt="GoodTaco logo with thumbs up" width="150px"></a>
+            <a href="#" class="logo"><img src="{% static 'static/images/GoodTaco.gif' %}" alt="GoodTaco logo with thumbs up" width="150px"></a>
             <ul class="links">
                 <li><a href="#home">home</a></li>
                 <li><a href="#about">about</a></li>
@@ -46,7 +46,7 @@
         <section class="about-us" id="about">
             <div class="about-container">
                 <span>
-                    <img class="about-img" src="/static/images/image4.jpg" alt="hand holding taco">
+                    <img class="about-img" src="{% static '/static/images/image4.jpg' %}" alt="hand holding taco">
                 </span>
                 <span class="about-text">
                     <h1>About Us</h1>
